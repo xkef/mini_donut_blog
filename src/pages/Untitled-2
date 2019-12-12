@@ -1,0 +1,32 @@
+[
+  {
+    "id": "stylus",
+    "label": "stylus",
+    "value": 445,
+    "color": "hsl(186, 70%, 50%)"
+  },
+  {
+    "id": "rust",
+    "label": "rust",
+    "value": 323,
+    "color": "hsl(303, 70%, 50%)"
+  },
+  {
+    "id": "haskell",
+    "label": "haskell",
+    "value": 283,
+    "color": "hsl(244, 70%, 50%)"
+  },
+  {
+    "id": "go",
+    "label": "go",
+    "value": 525,
+    "color": "hsl(224, 70%, 50%)"
+  },
+  {
+    "id": "sass",
+    "label": "sass",
+    "value": 1,
+    "color": "hsl(33, 70%, 50%)"
+  }
+]

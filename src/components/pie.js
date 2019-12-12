@@ -1,28 +1,28 @@
 import { ResponsivePie } from "@nivo/pie"
-// make sure parent container have a defined height when using
-// responsive component, otherwise height will be 0 and
-// no chart will be rendered.
-// website examples showcase many properties,
-// you'll often use just a few of them.
-const MyResponsivePie = ({ data /* see data tab */ }) => (
+import React from "react"
+
+const Pie = ({ data /* see data tab */ }) => (
   <ResponsivePie
     data={data}
     margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
-    innerRadius={0.45}
-    padAngle={7}
-    cornerRadius={3}
+    innerRadius={0.5}
+    padAngle={3}
+    cornerRadius={6}
     colors={{ scheme: "nivo" }}
-    borderWidth={9}
-    borderColor={{ from: "color", modifiers: [["darker", "0.7"]] }}
-    radialLabelsSkipAngle={34}
-    radialLabelsTextXOffset={7}
+    borderWidth={5}
+    borderColor={{ from: "color", modifiers: [["darker", "0.6"]] }}
+    radialLabelsSkipAngle={0}
+    radialLabelsTextXOffset={12}
     radialLabelsTextColor="#333333"
     radialLabelsLinkOffset={9}
-    radialLabelsLinkDiagonalLength={16}
-    radialLabelsLinkHorizontalLength={36}
-    radialLabelsLinkStrokeWidth={3}
+    radialLabelsLinkDiagonalLength={26}
+    radialLabelsLinkHorizontalLength={22}
+    radialLabelsLinkStrokeWidth={4}
     radialLabelsLinkColor={{ from: "color" }}
-    slicesLabelsSkipAngle={10}
+    sliceLabel={function(e) {
+      return e.id + " (" + e.value + ")"
+    }}
+    slicesLabelsSkipAngle={0}
     slicesLabelsTextColor="#333333"
     animate={true}
     motionStiffness={90}
@@ -119,3 +119,5 @@ const MyResponsivePie = ({ data /* see data tab */ }) => (
     ]}
   />
 )
+
+export default Pie
